@@ -1,0 +1,83 @@
+.shop-img{
+    height: 150px;
+    width: 150px;
+    /* margin-left: 78px; */
+    display: flex;
+    justify-content:center;
+    
+}
+.img{
+    width: auto;
+}
+.Shop{
+    background: linear-gradient(270deg, #d6a868, #d7bd56, #dd8835, #ca9b09, #c1c411);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 14s ease infinite;
+    -moz-animation: AnimationName 14s ease infinite;
+    animation: AnimationName 14s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.text{
+    text-align: center;
+    font-weight: 500;
+}
+.button{
+    /* margin-left: 125px; */
+    background-color: beige;
+    border-color: black;
+    margin-bottom: 10px;
+    display: flex;
+    box-shadow: 4px 6px 10px;
+    
+}
+
+.price{
+    text-align: center;
+    font-weight: 500;
+}
+.titlename{
+    text-align: center;
+
+}
+body{
+    background-color:beige;
+}
+.product {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E3DAC9;
+    box-shadow: 10px 10px 10px ;
+    margin: 25px;
+}
+.cardDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* #market-container{
+    margin: 15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+
