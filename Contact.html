@@ -23,13 +23,16 @@
 
   <main class="container my-4">
     <!-- Navbar -->
-    <nav class="pet-navbar mb-4">
+  <nav class="pet-navbar" id="navbar">
+    <div class="nav-toggle" onclick="toggleNav()">☰ Menu</div>
+    <div class="nav-links">
       <a href="./index.html">🏠 Home</a>
       <a href="./About.html">🐶 About</a>
       <a href="./Services.html">🛁 Products</a>
       <a href="./shop.html">🛒 Adoption</a>
       <a href="./Contact.html">📞 Contact</a>
-    </nav>
+    </div>
+  </nav>
 
     <div class="row">
       <!-- Contact Form -->
@@ -81,5 +84,11 @@
 
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  function toggleNav() {
+    document.getElementById("navbar").classList.toggle("nav-open");
+  }
+</script>
+
 </body>
 </html>

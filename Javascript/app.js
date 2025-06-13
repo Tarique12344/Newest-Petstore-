@@ -8,7 +8,7 @@ var shop = [
     {
         title: 'Odie',
         image: './images/odiE.jpg',
-        price: '$7,500-15,000',
+        price: '$50.00 Adoption fee',
         description: 'A energetic animal that loves cats, will eat left over lasanga'
     },
     {

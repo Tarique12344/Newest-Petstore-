@@ -256,3 +256,43 @@ footer {
 .btn-warning:hover {
   transform: scale(1.05);
 }
+
+ /* Mobile nav toggle styling */
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .pet-navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-toggle {
+    display: block;
+    background-color: #88c7e4;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .nav-open .nav-links {
+    display: flex;
+  }
+
+  .nav-links a {
+    width: 80%;
+    text-align: center;
+  }
+}
