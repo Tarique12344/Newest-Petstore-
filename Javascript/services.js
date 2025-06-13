@@ -30,7 +30,7 @@ var shop = [
     {
         title: 'Animal beds',
         image: './Images/petBeds.jpg',
-        price: '$25-$50',
+        price: '$25-$a50',
       description: 'We have a range of pet beds for your furry friend'
     },
 
