@@ -2,19 +2,19 @@
 body {
   margin: 0;
   font-family: Inter, sans-serif;
-  background-color: #ffdba0; ;
+  background-color: #97c7c6;
+   background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2);
   color: black;
 }
-
 header .banner {
   background: linear-gradient(
     270deg,
-    #d6a868,
-    #d7bd56,
-    #dd8835,
-    #ca9b09,
-    #c1c411,
-    #d6a868 /* repeat the first color to loop smoothly */
+    #007cf0,
+    #00dfd8,
+    #6499ff,
+    #7f7fd5,
+    #86fde8,
+    #007cf0 /* repeat the first color for smooth looping */
   );
   background-size: 600% 600%;
   animation: gradientMove 14s ease infinite;
@@ -25,7 +25,7 @@ header .banner {
   font-weight: 700;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid #ccc;
-  color: black;
+  color: white;
 }
 
 @keyframes gradientMove {
@@ -47,8 +47,8 @@ header .banner {
   justify-content: center;
   gap: 30px;
   padding: 15px 0;
-  background-color: #ffdba0; /* light peachy tone */
-  border-bottom: 3px dashed #ff8c42; /* playful dash */
+  /* background-color: #a0fcff; light peachy tone */
+  border-bottom: 3px dashed #3051e6; /* playful dash */
   font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
@@ -57,13 +57,13 @@ header .banner {
   color: #4b2e2e;
   font-size: 18px;
   padding: 10px 20px;
-  background-color: #e4d188;
+  background-color: #88c7e4;
   border-radius: 20px;
   transition: background-color 0.3s, transform 0.2s;
 }
 
 .pet-navbar a:hover {
-  background-color: #ffd580;
+  /* background-color:#3051e6; */
   transform: scale(1.1);
 }
 
@@ -176,7 +176,7 @@ footer {
 }
 
 .carousel-control-prev-icon::after {
-  content: '‹';
+  /* content: '‹'; */
   font-size: 30px;
   color: black;
   position: absolute;
@@ -186,11 +186,73 @@ footer {
 }
 
 .carousel-control-next-icon::after {
-  content: '›';
+  /* content: '›'; */
   font-size: 30px;
   color: black;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.feature-animals {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+    position: relative;
+  z-index: 0;
+  margin-top: 60px; /* This gives it room after weather */
+}
+
+.animal-card {
+  background-color: #fef9f4;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.animal-img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.animal-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #5a3e2b;
+}
+
+.animal-button {
+  background-color: #ffb347;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+.btn-warning {
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.btn-warning:hover {
+  transform: scale(1.05);
 }
